@@ -785,3 +785,48 @@ margin-bottom: 0px;
         border-radius: 1rem;
     }
 }
+
+/* Custom Owl Carousel Arrows - APS Theme */
+.owl-carousel .custom-owl-prev,
+.owl-carousel .custom-owl-next {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(254,93,55,0.10);
+    color: #FE5D37; /* Use your primary orange */
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    border: 2px solid #FE5D37;
+}
+
+.owl-carousel .custom-owl-prev:hover,
+.owl-carousel .custom-owl-next:hover {
+    background: #FE5D37;
+    color: #fff;
+    border-color: #FE5D37;
+}
+
+.owl-carousel .custom-owl-prev {
+    left: -32px;
+}
+
+.owl-carousel .custom-owl-next {
+    right: -32px;
+}
+
+/* Hide arrows on mobile */
+@media (max-width: 991.98px) {
+    .owl-carousel .custom-owl-prev,
+    .owl-carousel .custom-owl-next {
+        display: none !important;
+    }
+}
