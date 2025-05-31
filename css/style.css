@@ -744,12 +744,18 @@ margin-bottom: 0px;
 
 .amp {
     font-family: 'Georgia', 'Baskerville', serif;
+    margin: 0 0.3em; 
     /* font-style: italic; */
     /* font-size: 1.1em; */
     /* letter-spacing: 0.05em; */
     /* vertical-align: middle; */
     /* padding: 0 0.1em; */
     /* display: inline-block; */
+}
+
+.phonics-math-nowrap {
+    white-space: wrap;
+    margin: 0px;
 }
 
 #phonicsSideTableContainer {
@@ -829,4 +835,29 @@ margin-bottom: 0px;
     .owl-carousel .custom-owl-next {
         display: none !important;
     }
+}
+
+.reels-scroll {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    padding-bottom: 8px;
+}
+.reels-scroll > div {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+    margin-right: 8px;
+    min-width: 220px;
+    max-width: 70vw;
+    flex: 0 0 auto;
+}
+
+/* Force proper carousel behavior on smaller screens */
+.reels-carousel .owl-stage-outer {
+    overflow: visible !important;
+}
+
+.owl-carousel .owl-item {
+    display: flex;
+    justify-content: center;
 }
