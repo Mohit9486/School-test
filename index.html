@@ -824,24 +824,32 @@ I am mother of Tanish Goel attending these classes from almost 2 years and got h
     <script async src="//www.instagram.com/embed.js"></script>
     
     <script>
-    $(document).ready(function(){
+        $(document).ready(function(){
         $('.reels-carousel').owlCarousel({
             loop:true,
             margin:24,
             nav:true,
             dots:true,
+            navText: [
+                '<span class="custom-owl-prev"><i class="fas fa-chevron-left"></i></span>',
+                '<span class="custom-owl-next"><i class="fas fa-chevron-right"></i></span>'
+            ],
             responsive:{
                 0:{
-                    items:1
+                    items:1,
+                    nav:false
                 },
                 600:{
-                    items:2
+                    items:2,
+                    nav:false
                 },
                 992:{
-                    items:3
+                    items:3,
+                    nav:true
                 },
                 1200:{
-                    items:4
+                    items:4,
+                    nav:true
                 }
             }
         });
@@ -852,35 +860,6 @@ I am mother of Tanish Goel attending these classes from almost 2 years and got h
                 window.instgrm.Embeds.process();
             }
         });
-    });
-
-    $('.reels-carousel').owlCarousel({
-        loop:true,
-        margin:24,
-        nav:true,
-        dots:true,
-        navText: [
-            '<span class="custom-owl-prev"><i class="fas fa-chevron-left"></i></span>',
-            '<span class="custom-owl-next"><i class="fas fa-chevron-right"></i></span>'
-        ],
-        responsive:{
-            0:{
-                items:1,
-                nav:false // Hide arrows on mobile
-            },
-            600:{
-                items:2,
-                nav:false // Hide arrows on small tablets
-            },
-            992:{
-                items:3,
-                nav:true // Show arrows on desktop
-            },
-            1200:{
-                items:4,
-                nav:true
-            }
-        }
     });
     </script>
 </body>
