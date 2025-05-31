@@ -829,14 +829,6 @@ margin-bottom: 0px;
     right: -32px;
 }
 
-/* Hide arrows on mobile */
-@media (max-width: 991.98px) {
-    .owl-carousel .custom-owl-prev,
-    .owl-carousel .custom-owl-next {
-        display: none !important;
-    }
-}
-
 .reels-scroll {
     -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
