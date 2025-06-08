@@ -792,9 +792,10 @@ margin-bottom: 0px;
     }
 }
 
-/* Custom Owl Carousel Arrows - APS Theme */
-.owl-carousel .custom-owl-prev,
-.owl-carousel .custom-owl-next {
+/* ...existing code... */
+
+.reels-carousel .custom-owl-prev,
+.reels-carousel .custom-owl-next {
     display: flex !important;
     align-items: center;
     justify-content: center;
@@ -803,7 +804,7 @@ margin-bottom: 0px;
     background: #fff;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(254,93,55,0.10);
-    color: #FE5D37; /* Use your primary orange */
+    color: #FE5D37;
     font-size: 2rem;
     position: absolute;
     top: 50%;
@@ -814,18 +815,18 @@ margin-bottom: 0px;
     border: 2px solid #FE5D37;
 }
 
-.owl-carousel .custom-owl-prev:hover,
-.owl-carousel .custom-owl-next:hover {
+.reels-carousel .custom-owl-prev:hover,
+.reels-carousel .custom-owl-next:hover {
     background: #FE5D37;
     color: #fff;
     border-color: #FE5D37;
 }
 
-.owl-carousel .custom-owl-prev {
+.reels-carousel .custom-owl-prev {
     left: -32px;
 }
 
-.owl-carousel .custom-owl-next {
+.reels-carousel .custom-owl-next {
     right: -32px;
 }
 
@@ -846,10 +847,10 @@ margin-bottom: 0px;
 
 /* Force proper carousel behavior on smaller screens */
 .reels-carousel .owl-stage-outer {
-    overflow: visible !important;
+    /* overflow: visible !important; */
 }
 
-.owl-carousel .owl-item {
+.reels-carousel .owl-carousel .owl-item {
     display: flex;
     justify-content: center;
 }
